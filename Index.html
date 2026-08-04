@@ -1,1 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFTACADEMY - Portafolio Académico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fondo con partículas tecnológicas -->
+    <div id="particles-container"></div>
 
+    <!-- Menú de Navegación Fijo -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 50 50" width="30" height="30">
+                    <!-- Circuito electrónico simplificado -->
+                    <circle cx="10" cy="10" r="3" fill="currentColor"/>
+                    <circle cx="40" cy="10" r="3" fill="currentColor"/>
+                    <circle cx="10" cy="40" r="3" fill="currentColor"/>
+                    <circle cx="40" cy="40" r="3" fill="currentColor"/>
+                    <line x1="10" y1="10" x2="40" y2="10" stroke="currentColor" stroke-width="2"/>
+                    <line x1="40" y1="10" x2="40" y2="40" stroke="currentColor" stroke-width="2"/>
+                    <line x1="40" y1="40" x2="10" y2="40" stroke="currentColor" stroke-width="2"/>
+                    <line x1="10" y1="40" x2="10" y2="10" stroke="currentColor" stroke-width="2"/>
+                    <line x1="10" y1="10" x2="25" y2="25" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="40" y1="10" x2="25" y2="25" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="25" cy="25" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">&lt;/&gt; SOFTACADEMY</span>
+            </div>
+
+            <!-- Menú Items -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link active" data-section="inicio">🏠 Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#unidad1" class="nav-link" data-section="unidad1">📘 Unidad 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#unidad2" class="nav-link" data-section="unidad2">📗 Unidad 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#unidad3" class="nav-link" data-section="unidad3">📕 Unidad 3</a>
+                </li>
+            </ul>
+
+            <!-- Hamburger Menu para móvil -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="section active">
+        <div class="container">
+            <!-- Presentación Principal -->
+            <div class="intro-section">
+                <div class="intro-content">
+                    <div class="intro-logo">
+                        <svg class="intro-logo-icon" viewBox="0 0 100 100" width="80" height="80">
+                            <!-- Circuito más grande -->
+                            <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                            <circle cx="80" cy="20" r="6" fill="currentColor"/>
+                            <circle cx="20" cy="80" r="6" fill="currentColor"/>
+                            <circle cx="80" cy="80" r="6" fill="currentColor"/>
+                            <line x1="20" y1="20" x2="80" y2="20" stroke="currentColor" stroke-width="3"/>
+                            <line x1="80" y1="20" x2="80" y2="80" stroke="currentColor" stroke-width="3"/>
+                            <line x1="80" y1="80" x2="20" y2="80" stroke="currentColor" stroke-width="3"/>
+                            <line x1="20" y1="80" x2="20" y2="20" stroke="currentColor" stroke-width="3"/>
+                            <line x1="20" y1="20" x2="50" y2="50" stroke="currentColor" stroke-width="2.5"/>
+                            <line x1="80" y1="20" x2="50" y2="50" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                        </svg>
+                        <h1 class="brand-text">&lt;/&gt; SOFTACADEMY</h1>
+                    </div>
+                    
+                    <div class="intro-info">
+                        <h2 class="intro-title">Nicoll Alexandra Soria Caisa</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Carrera:</span>
+                                <span class="info-value">Ingeniería en Software</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Universidad:</span>
+                                <span class="info-value">Universidad Técnica de Cotopaxi</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Edad:</span>
+                                <span class="info-value">18 años</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Lugar de Estudio:</span>
+                                <span class="info-value">Consejo Provincial de Pichincha</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Lugar de Residencia:</span>
+                                <span class="info-value">Quito, Ecuador</span>
+                            </div>
+                        </div>
+
+                        <!-- Marco para fotografía -->
+                        <div class="photo-frame">
+                            <div class="photo-placeholder">
+                                <svg viewBox="0 0 100 100" width="60" height="60">
+                                    <circle cx="50" cy="35" r="15" fill="currentColor" opacity="0.7"/>
+                                    <path d="M 20 100 Q 50 70 80 100" fill="currentColor" opacity="0.7"/>
+                                </svg>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sistema de Progreso -->
+            <div class="progress-section">
+                <h2 class="section-title">📊 Mi Progreso Académico</h2>
+                <div class="progress-cards">
+                    <!-- Unidad 1 -->
+                    <div class="progress-card" data-unit="1">
+                        <div class="progress-header">
+                            <h3>⭐ Unidad 1</h3>
+                            <span class="stars-count">0/5</span>
+                        </div>
+                        <div class="progress-info">
+                            <span class="progress-percentage" id="progress-percent-1">0%</span>
+                            <span class="progress-topics">0/5 temas</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progress-bar-1" style="width: 0%"></div>
+                        </div>
+                        <button class="btn-view-unit" onclick="scrollToSection('unidad1')">Ver Unidad</button>
+                    </div>
+
+                    <!-- Unidad 2 -->
+                    <div class="progress-card" data-unit="2">
+                        <div class="progress-header">
+                            <h3>⭐ Unidad 2</h3>
+                            <span class="stars-count">0/4</span>
+                        </div>
+                        <div class="progress-info">
+                            <span class="progress-percentage" id="progress-percent-2">0%</span>
+                            <span class="progress-topics">0/4 temas</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progress-bar-2" style="width: 0%"></div>
+                        </div>
+                        <button class="btn-view-unit" onclick="scrollToSection('unidad2')">Ver Unidad</button>
+                    </div>
+
+                    <!-- Unidad 3 -->
+                    <div class="progress-card" data-unit="3">
+                        <div class="progress-header">
+                            <h3>⭐ Unidad 3</h3>
+                            <span class="stars-count">0/5</span>
+                        </div>
+                        <div class="progress-info">
+                            <span class="progress-percentage" id="progress-percent-3">0%</span>
+                            <span class="progress-topics">0/5 temas</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progress-bar-3" style="width: 0%"></div>
+                        </div>
+                        <button class="btn-view-unit" onclick="scrollToSection('unidad3')">Ver Unidad</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habilidades -->
+            <div class="skills-section">
+                <h2 class="section-title">💡 Mis Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🧠</div>
+                        <h3>Pensamiento Lógico</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🔧</div>
+                        <h3>Resolución de Problemas</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🐍</div>
+                        <h3>Programación en Python</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Desarrollo de Algoritmos</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">👥</div>
+                        <h3>Trabajo en Equipo</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📚</div>
+                        <h3>Aprendizaje Continuo</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Creatividad</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">✅</div>
+                        <h3>Responsabilidad</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">💬</div>
+                        <h3>Comunicación</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🔄</div>
+                        <h3>Adaptabilidad</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asistente Académico -->
+            <div class="assistant-section">
+                <h2 class="section-title">🤖 Asistente Académico</h2>
+                <div class="chatbot-container">
+                    <div class="chatbot-messages" id="chatbot-messages">
+                        <div class="message bot-message">
+                            <p>¡Hola! Soy tu asistente académico. Estoy aquí para ayudarte a comprender mejor los contenidos de las tres unidades. ¿Qué pregunta tienes?</p>
+                        </div>
+                    </div>
+                    <div class="chatbot-suggestions">
+                        <button class="suggestion-btn" onclick="askQuestion('¿Qué aprendí en la Unidad 1?')">¿Qué aprendí en la Unidad 1?</button>
+                        <button class="suggestion-btn" onclick="askQuestion('Explícame las estructuras condicionales')">Explícame las estructuras condicionales</button>
+                        <button class="suggestion-btn" onclick="askQuestion('¿Qué es Python?')">¿Qué es Python?</button>
+                        <button class="suggestion-btn" onclick="askQuestion('Ayúdame a estudiar la Unidad 2')">Ayúdame a estudiar la Unidad 2</button>
+                    </div>
+                    <div class="chatbot-input-container">
+                        <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Escribe tu pregunta aquí...">
+                        <button class="btn-ask" onclick="sendQuestion()">Preguntar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN UNIDAD 1: Fundamentos de la Computación -->
+    <section id="unidad1" class="section">
+        <div class="container">
+            <div class="unit-header">
+                <h2 class="section-title">📘 Unidad 1: Fundamentos de la Computación</h2>
+                <div class="unit-progress-bar">
+                    <div class="unit-progress-fill" id="unit1-progress"></div>
+                </div>
+            </div>
+
+            <div class="topics-grid">
+                <!-- Tema 1: Von Neumann y Harvard -->
+                <div class="topic-card" data-topic="1">
+                    <div class="topic-icon">🖥️</div>
+                    <h3>Modelo de Von Neumann y Harvard</h3>
+                    <p>Arquitecturas fundamentales de computadoras</p>
+                    <button class="btn-primary" onclick="openModal('u1t1')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 2: Sistemas Operativos -->
+                <div class="topic-card" data-topic="2">
+                    <div class="topic-icon">⚙️</div>
+                    <h3>Sistemas Operativos</h3>
+                    <p>Gestor de recursos del computador</p>
+                    <button class="btn-primary" onclick="openModal('u1t2')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 3: Sistemas de Numeración -->
+                <div class="topic-card" data-topic="3">
+                    <div class="topic-icon">🔢</div>
+                    <h3>Sistemas de Numeración</h3>
+                    <p>Binario, Octal y Hexadecimal</p>
+                    <button class="btn-primary" onclick="openModal('u1t3')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 4: Aritmética Binaria -->
+                <div class="topic-card" data-topic="4">
+                    <div class="topic-icon">➕</div>
+                    <h3>Aritmética Binaria</h3>
+                    <p>Operaciones en base 2</p>
+                    <button class="btn-primary" onclick="openModal('u1t4')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 5: Álgebra de Boole -->
+                <div class="topic-card" data-topic="5">
+                    <div class="topic-icon">✓</div>
+                    <h3>Álgebra de Boole</h3>
+                    <p>Lógica digital y compuertas</p>
+                    <button class="btn-primary" onclick="openModal('u1t5')">Aprender Más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN UNIDAD 2: Algoritmia -->
+    <section id="unidad2" class="section">
+        <div class="container">
+            <div class="unit-header">
+                <h2 class="section-title">📗 Unidad 2: Algoritmia</h2>
+                <div class="unit-progress-bar">
+                    <div class="unit-progress-fill" id="unit2-progress"></div>
+                </div>
+            </div>
+
+            <div class="topics-grid">
+                <!-- Tema 1: Algoritmos -->
+                <div class="topic-card" data-topic="1">
+                    <div class="topic-icon">🔀</div>
+                    <h3>Algoritmos y sus Características</h3>
+                    <p>Concepto y propiedades</p>
+                    <button class="btn-primary" onclick="openModal('u2t1')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 2: Diagramas de Flujo -->
+                <div class="topic-card" data-topic="2">
+                    <div class="topic-icon">📊</div>
+                    <h3>Diagramas de Flujo</h3>
+                    <p>Modelación de algoritmos</p>
+                    <button class="btn-primary" onclick="openModal('u2t2')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 3: Pseudocódigo -->
+                <div class="topic-card" data-topic="3">
+                    <div class="topic-icon">📝</div>
+                    <h3>Pseudocódigo</h3>
+                    <p>Una herramienta útil</p>
+                    <button class="btn-primary" onclick="openModal('u2t3')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 4: Modelado de Problemas -->
+                <div class="topic-card" data-topic="4">
+                    <div class="topic-icon">🎯</div>
+                    <h3>Modelado de Problemas</h3>
+                    <p>Análisis y diseño</p>
+                    <button class="btn-primary" onclick="openModal('u2t4')">Aprender Más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN UNIDAD 3: Programación -->
+    <section id="unidad3" class="section">
+        <div class="container">
+            <div class="unit-header">
+                <h2 class="section-title">📕 Unidad 3: Programación</h2>
+                <div class="unit-progress-bar">
+                    <div class="unit-progress-fill" id="unit3-progress"></div>
+                </div>
+            </div>
+
+            <div class="topics-grid">
+                <!-- Tema 1: Lenguajes y Paradigmas -->
+                <div class="topic-card" data-topic="1">
+                    <div class="topic-icon">💻</div>
+                    <h3>Lenguajes y Paradigmas</h3>
+                    <p>Tipos de programación</p>
+                    <button class="btn-primary" onclick="openModal('u3t1')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 2: Introducción a Python -->
+                <div class="topic-card" data-topic="2">
+                    <div class="topic-icon">🐍</div>
+                    <h3>Introducción a Python</h3>
+                    <p>Fundamentos del lenguaje</p>
+                    <button class="btn-primary" onclick="openModal('u3t2')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 3: Operadores -->
+                <div class="topic-card" data-topic="3">
+                    <div class="topic-icon">➗</div>
+                    <h3>Operadores</h3>
+                    <p>Algebraicos, relacionales y lógicos</p>
+                    <button class="btn-primary" onclick="openModal('u3t3')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 4: Estructuras Condicionales -->
+                <div class="topic-card" data-topic="4">
+                    <div class="topic-icon">❓</div>
+                    <h3>Estructuras Condicionales</h3>
+                    <p>If, else, elif</p>
+                    <button class="btn-primary" onclick="openModal('u3t4')">Aprender Más</button>
+                </div>
+
+                <!-- Tema 5: Estructuras Repetitivas -->
+                <div class="topic-card" data-topic="5">
+                    <div class="topic-icon">🔁</div>
+                    <h3>Estructuras Repetitivas</h3>
+                    <p>For, while y do-while</p>
+                    <button class="btn-primary" onclick="openModal('u3t5')">Aprender Más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL GENÉRICO -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                <!-- Contenido dinámico -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
